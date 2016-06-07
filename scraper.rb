@@ -35,4 +35,4 @@ def scrape_list(url)
   end
 end
 
-scrape_list('http://www.gov.tc/index.php/government/house-of-assembly')
+scrape_list('https://www.gov.tc/index.php/government/house-of-assembly')
