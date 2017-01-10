@@ -1,0 +1,50 @@
+---
+request:
+  method: get
+  uri: https://www.gov.tc/index.php/government/house-of-assembly
+  body:
+    encoding: US-ASCII
+    string: ''
+  headers:
+    Accept-Encoding:
+    - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+    Accept:
+    - "*/*"
+    User-Agent:
+    - Ruby
+response:
+  status:
+    code: 200
+    message: OK
+  headers:
+    Server:
+    - Sucuri/Cloudproxy
+    Date:
+    - Tue, 10 Jan 2017 08:00:28 GMT
+    Content-Type:
+    - text/html; charset=utf-8
+    Transfer-Encoding:
+    - chunked
+    Connection:
+    - keep-alive
+    Vary:
+    - Accept-Encoding
+    Expires:
+    - Wed, 17 Aug 2005 00:00:00 GMT
+    Cache-Control:
+    - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+    Pragma:
+    - no-cache
+    Set-Cookie:
+    - 276721876c78330ce53d64cfdbba5eba=07949da8704595d2e0aa139e37252f24; path=/; secure;
+      HttpOnly
+    Strict-Transport-Security:
+    - max-age=63072000; includeSubDomains; preload
+    Last-Modified:
+    - Tue, 10 Jan 2017 08:00:27 GMT
+    X-Sucuri-Id:
+    - '13002'
+  body:
+    encoding: ASCII-8BIT
+  http_version: 
+recorded_at: Tue, 10 Jan 2017 08:00:28 GMT
