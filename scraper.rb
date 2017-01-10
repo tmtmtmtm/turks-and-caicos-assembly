@@ -2,33 +2,58 @@
 # encoding: utf-8
 # frozen_string_literal: true
 
-require 'nokogiri'
+require 'pry'
 require 'scraped'
 require 'scraperwiki'
 
 require 'open-uri/cached'
 OpenURI::Cache.cache_path = '.cache'
 
-def noko_for(url)
-  Nokogiri::HTML(open(url).read)
-end
+class MembersList < Scraped::HTML
+  decorator Scraped::Response::Decorator::AbsoluteUrls
 
-def scrape_list(url)
-  noko = noko_for(url)
-  noko.css('.uk-overlay').each do |mp|
-    box = mp.css('.uk-overlay-area-content')
-    data = {
-      name:   box.xpath('p/text()').text.sub('Hon. ', '').tidy,
-      area:   box.xpath('p/small').text.split('|').last.tidy,
-      image:  mp.css('img/@src').text,
-      term:   2012,
-      source: box.css('p a/@href').text,
-    }
-    data[:image] = URI.join(url, data[:image]).to_s unless data[:image].to_s.empty?
-    data[:source] = data[:source].to_s.empty? ? url : URI.join(url, data[:source]).to_s
-    ScraperWiki.save_sqlite(%i(name term), data)
+  field :members do
+    noko.css('.uk-overlay').map do |mp|
+      fragment mp => MemberBox
+    end
   end
 end
 
+class MemberBox < Scraped::HTML
+  field :name do
+    box.xpath('p/text()').text.sub('Hon. ', '').tidy
+  end
+
+  field :area do
+    box.xpath('p/small').text.split('|').last.tidy
+  end
+
+  field :image do
+    noko.css('img/@src').text
+  end
+
+  field :term do
+    2012
+  end
+
+  field :source do
+    box.css('p a/@href').text
+  end
+
+  private
+
+  def box
+    noko.css('.uk-overlay-area-content')
+  end
+end
+
+url = 'https://www.gov.tc/index.php/government/house-of-assembly'
+page = MembersList.new(response: Scraped::Request.new(url: url).response)
+data = page.members.map(&:to_h).each do |mem|
+  mem[:source] = url if mem[:source].to_s.empty?
+end
+
+puts data
+
 ScraperWiki.sqliteexecute('DELETE FROM data') rescue nil
-scrape_list('https://www.gov.tc/index.php/government/house-of-assembly')
+ScraperWiki.save_sqlite(%i(name term), data)
