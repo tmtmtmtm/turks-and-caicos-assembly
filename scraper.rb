@@ -6,8 +6,9 @@ require 'pry'
 require 'scraped'
 require 'scraperwiki'
 
-require 'open-uri/cached'
-OpenURI::Cache.cache_path = '.cache'
+# require 'open-uri/cached'
+# OpenURI::Cache.cache_path = '.cache'
+require 'scraped_page_archive/open-uri'
 
 class MembersList < Scraped::HTML
   decorator Scraped::Response::Decorator::AbsoluteUrls
@@ -50,10 +51,11 @@ end
 url = 'https://www.gov.tc/index.php/government/house-of-assembly'
 page = MembersList.new(response: Scraped::Request.new(url: url).response)
 data = page.members.map(&:to_h).each do |mem|
+  # Not all members have individual links
   mem[:source] = url if mem[:source].to_s.empty?
 end
 
-puts data
+# puts data
 
 ScraperWiki.sqliteexecute('DELETE FROM data') rescue nil
 ScraperWiki.save_sqlite(%i(name term), data)
