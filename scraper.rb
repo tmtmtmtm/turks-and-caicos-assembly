@@ -33,10 +33,6 @@ class MemberBox < Scraped::HTML
     noko.css('img/@src').text
   end
 
-  field :term do
-    2012
-  end
-
   field :source do
     box.css('p a/@href').text
   end
@@ -58,4 +54,4 @@ end
 # puts data
 
 ScraperWiki.sqliteexecute('DELETE FROM data') rescue nil
-ScraperWiki.save_sqlite(%i(name term), data)
+ScraperWiki.save_sqlite(%i(name area), data)
