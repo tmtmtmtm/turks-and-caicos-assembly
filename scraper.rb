@@ -22,7 +22,7 @@ end
 
 class MemberBox < Scraped::HTML
   field :name do
-    box.xpath('p/text()').text.sub('Hon. ', '').tidy
+    box.xpath('p/text()').text.tidy.sub('Hon. ', '')
   end
 
   field :area do
