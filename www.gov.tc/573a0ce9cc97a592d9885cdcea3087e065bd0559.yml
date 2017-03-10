@@ -20,7 +20,7 @@ response:
     Server:
     - Sucuri/Cloudproxy
     Date:
-    - Thu, 09 Mar 2017 10:39:57 GMT
+    - Fri, 10 Mar 2017 08:27:27 GMT
     Content-Type:
     - text/html; charset=utf-8
     Connection:
@@ -34,12 +34,14 @@ response:
     Pragma:
     - no-cache
     Set-Cookie:
-    - 276721876c78330ce53d64cfdbba5eba=11cd7893df23ca3d65abb5d568cacf83; path=/; secure;
+    - 276721876c78330ce53d64cfdbba5eba=3a396f463ff4e89239e2051031d82aa1; path=/; secure;
       HttpOnly
     Strict-Transport-Security:
     - max-age=63072000; includeSubDomains; preload
     Last-Modified:
-    - Thu, 09 Mar 2017 10:39:57 GMT
+    - Fri, 10 Mar 2017 08:27:27 GMT
+    X-Sucuri-Cache:
+    - MISS
     X-Sucuri-Id:
     - '11021'
     Content-Length:
@@ -47,4 +49,4 @@ response:
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Thu, 09 Mar 2017 10:39:57 GMT
+recorded_at: Fri, 10 Mar 2017 08:27:28 GMT
