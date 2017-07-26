@@ -20,7 +20,7 @@ response:
     Server:
     - nginx
     Date:
-    - Tue, 25 Jul 2017 20:30:17 GMT
+    - Wed, 26 Jul 2017 04:55:25 GMT
     Content-Type:
     - text/html; charset=utf-8
     Transfer-Encoding:
@@ -36,12 +36,12 @@ response:
     Pragma:
     - no-cache
     Set-Cookie:
-    - 276721876c78330ce53d64cfdbba5eba=jvemg2ng3f032qcas7kdaqlcf5; path=/; secure;
+    - 276721876c78330ce53d64cfdbba5eba=aokgmap3imav0ckf2r2mebo436; path=/; secure;
       HttpOnly
     Strict-Transport-Security:
     - max-age=63072000; includeSubDomains; preload
     Last-Modified:
-    - Tue, 25 Jul 2017 20:30:17 GMT
+    - Wed, 26 Jul 2017 04:55:25 GMT
     X-Sucuri-Cache:
     - MISS
     X-Sucuri-Id:
@@ -49,4 +49,4 @@ response:
   body:
     encoding: ASCII-8BIT
   http_version: 
-recorded_at: Tue, 25 Jul 2017 20:30:17 GMT
+recorded_at: Wed, 26 Jul 2017 04:55:25 GMT
