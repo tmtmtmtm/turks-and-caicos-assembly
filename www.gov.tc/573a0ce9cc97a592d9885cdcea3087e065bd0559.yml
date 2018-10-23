@@ -18,35 +18,27 @@ response:
     message: OK
   headers:
     Server:
-    - nginx
+    - Sucuri/Cloudproxy
     Date:
-    - Thu, 25 Jan 2018 23:26:33 GMT
+    - Tue, 23 Oct 2018 04:50:39 GMT
     Content-Type:
-    - text/html; charset=utf-8
+    - text/html; charset=UTF-8
+    Content-Length:
+    - '0'
     Connection:
     - keep-alive
-    Vary:
-    - Accept-Encoding
-    Expires:
-    - Wed, 17 Aug 2005 00:00:00 GMT
-    Cache-Control:
-    - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
-    Pragma:
-    - no-cache
+    X-Sucuri-Id:
+    - '11002'
+    Content-Security-Policy:
+    - upgrade-insecure-requests;
     Set-Cookie:
-    - 276721876c78330ce53d64cfdbba5eba=ug3lgsuanse46vln5dske5m3s1; path=/; secure;
+    - 276721876c78330ce53d64cfdbba5eba=rjqvutjone1af1rqjle24ntsq5; path=/; secure;
       HttpOnly
     Strict-Transport-Security:
     - max-age=63072000; includeSubDomains; preload
-    Last-Modified:
-    - Thu, 25 Jan 2018 23:26:32 GMT
     X-Sucuri-Cache:
     - MISS
-    X-Sucuri-Id:
-    - '11002'
-    Content-Length:
-    - '7708'
   body:
-    encoding: ASCII-8BIT
+    encoding: UTF-8
   http_version: 
-recorded_at: Thu, 25 Jan 2018 23:26:33 GMT
+recorded_at: Tue, 23 Oct 2018 04:50:39 GMT
