@@ -20,7 +20,7 @@ response:
     Server:
     - Sucuri/Cloudproxy
     Date:
-    - Sun, 04 Nov 2018 16:33:14 GMT
+    - Mon, 05 Nov 2018 19:57:51 GMT
     Content-Type:
     - text/html; charset=UTF-8
     Content-Length:
@@ -32,7 +32,7 @@ response:
     Content-Security-Policy:
     - upgrade-insecure-requests;
     Set-Cookie:
-    - 276721876c78330ce53d64cfdbba5eba=89pikca4n9iam3tbo8fkfnmvv6; path=/; secure;
+    - 276721876c78330ce53d64cfdbba5eba=2g11athpgpvvdouigkbiq91vq0; path=/; secure;
       HttpOnly
     Strict-Transport-Security:
     - max-age=63072000; includeSubDomains; preload
@@ -41,4 +41,4 @@ response:
   body:
     encoding: UTF-8
   http_version: 
-recorded_at: Sun, 04 Nov 2018 16:33:14 GMT
+recorded_at: Mon, 05 Nov 2018 19:57:50 GMT
