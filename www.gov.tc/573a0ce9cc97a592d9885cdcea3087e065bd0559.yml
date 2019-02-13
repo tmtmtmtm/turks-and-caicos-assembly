@@ -20,27 +20,16 @@ response:
     Server:
     - Sucuri/Cloudproxy
     Date:
-    - Tue, 12 Feb 2019 07:17:30 GMT
+    - Wed, 13 Feb 2019 18:39:38 GMT
     Content-Type:
-    - text/html; charset=UTF-8
-    Content-Length:
-    - '0'
+    - text/html
     Connection:
     - keep-alive
     X-Sucuri-Id:
     - '11002'
-    Set-Cookie:
-    - 276721876c78330ce53d64cfdbba5eba=7r9odkug9nttlm9u0d6d80jrd5; path=/; secure;
-      HttpOnly
-    Strict-Transport-Security:
-    - max-age=63072000; includeSubDomains; preload
-    X-Content-Type-Options:
-    - nosniff
-    X-Xss-Protection:
-    - 1; mode=block
-    X-Sucuri-Cache:
-    - MISS
+    Content-Length:
+    - '1900'
   body:
     encoding: UTF-8
   http_version: 
-recorded_at: Tue, 12 Feb 2019 07:17:30 GMT
+recorded_at: Wed, 13 Feb 2019 18:39:38 GMT
