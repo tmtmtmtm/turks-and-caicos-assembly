@@ -20,7 +20,7 @@ response:
     Server:
     - Sucuri/Cloudproxy
     Date:
-    - Thu, 07 Mar 2019 15:06:27 GMT
+    - Fri, 08 Mar 2019 00:18:45 GMT
     Content-Type:
     - text/html
     Connection:
@@ -32,4 +32,4 @@ response:
   body:
     encoding: UTF-8
   http_version: 
-recorded_at: Thu, 07 Mar 2019 15:06:27 GMT
+recorded_at: Fri, 08 Mar 2019 00:18:45 GMT
