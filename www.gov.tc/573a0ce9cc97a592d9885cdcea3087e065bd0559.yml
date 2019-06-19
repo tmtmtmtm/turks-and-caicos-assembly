@@ -20,7 +20,7 @@ response:
     Server:
     - Sucuri/Cloudproxy
     Date:
-    - Tue, 18 Jun 2019 08:12:23 GMT
+    - Wed, 19 Jun 2019 11:00:45 GMT
     Content-Type:
     - text/html
     Transfer-Encoding:
@@ -32,4 +32,4 @@ response:
   body:
     encoding: UTF-8
   http_version: 
-recorded_at: Tue, 18 Jun 2019 08:12:24 GMT
+recorded_at: Wed, 19 Jun 2019 11:00:45 GMT
